@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kamui Voice herunterladen</title>
+<meta name="description" content="Kamui Voice: Diktieren auf dem Mac, alles bleibt auf dem Gerät.">
+<link rel="icon" href="/voice/signet.png">
+<style>
+  @font-face { font-family: Cinzel; src: url(/voice/fonts/Cinzel-Regular.ttf); }
+  @font-face { font-family: Lato; font-weight: 300; src: url(/voice/fonts/Lato-Light.ttf); }
+  @font-face { font-family: Lato; font-weight: 400; src: url(/voice/fonts/Lato-Regular.ttf); }
+  :root { --tusche: #0B0B0B; --creme: #EDE1CA; --leise: rgba(237,225,202,.62); --linie: rgba(237,225,202,.16); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--tusche); color: var(--creme); font: 300 17px/1.6 Lato, -apple-system, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 72px 16px 56px; }
+  .signet { width: 64px; height: auto; opacity: .95; }
+  .kicker { font: 400 12px/1 Lato, sans-serif; letter-spacing: .24em; text-transform: uppercase; color: var(--leise); margin: 28px 0 14px; }
+  h1 { font: 400 clamp(34px, 6vw, 52px)/1.12 Cinzel, serif; margin: 0 0 18px; letter-spacing: .02em; }
+  p.lead { font-size: 19px; color: var(--leise); max-width: 34em; margin: 0 0 34px; }
+  .knopf { display: inline-block; background: var(--creme); color: var(--tusche); text-decoration: none; font: 400 16px/1 Lato, sans-serif;
+           letter-spacing: .06em; padding: 18px 30px; border-radius: 999px; }
+  .knopf:hover { background: #F6EEDD; }
+  .klein { font-size: 14px; color: var(--leise); margin-top: 14px; }
+  ol { list-style: none; counter-reset: s; padding: 0; margin: 56px 0 0; display: grid; gap: 12px; }
+  ol li { counter-increment: s; border: 1px solid var(--linie); border-radius: 12px; padding: 18px 20px 18px 64px; position: relative; }
+  ol li::before { content: counter(s); position: absolute; left: 22px; top: 14px; font: 400 22px Cinzel, serif; }
+  ol b { font-weight: 400; color: var(--creme); }
+  ol span { color: var(--leise); }
+  footer { margin-top: 56px; font-size: 13px; color: var(--leise); border-top: 1px solid var(--linie); padding-top: 18px; }
+  a { color: var(--creme); }
+</style>
+</head>
+<body>
+<main>
+  <img class="signet" src="/voice/signet.png" alt="Kamui">
+  <div class="kicker">Kamui Voice für den Mac</div>
+  <h1>Sprechen statt tippen.</h1>
+  <p class="lead">Taste halten, sprechen, loslassen: der Text steht im Feld. Spracherkennung und Korrektur laufen auf deinem Mac, nichts verlässt das Gerät.</p>
+  <a class="knopf" href="/voice/download">Für Mac herunterladen</a>
+  <div class="klein">Version <!--VERSION--> · macOS 12 oder neuer · Apple-Chip und Intel · Updates kommen automatisch</div>
+  <ol>
+    <li><b>Installer öffnen.</b> <span>Doppelklick auf „Kamui-Voice.pkg“ und den Schritten folgen. Eine ältere Kopie wird dabei ersetzt.</span></li>
+    <li><b>Freigaben erteilen.</b> <span>Kamui Voice startet mit einer kurzen Einführung: Mikrofon und „Tastatur &amp; Einfügen“ erlauben.</span></li>
+    <li><b>Diktieren.</b> <span>Rechte ⌘-Taste halten und sprechen. Esc bricht jederzeit ab.</span></li>
+  </ol>
+  <footer>© 2026 Kamui · <a href="https://kamui.consulting">kamui.consulting</a></footer>
+</main>
+</body>
+</html>

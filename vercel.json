@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/", "destination": "/voice", "permanent": false },
+    { "source": "/voice/download", "destination": "https://github.com/Flanko69/kamui-voice-updates/releases/download/dateien/Kamui-Voice.pkg", "permanent": false }
+  ],
+  "headers": [
+    { "source": "/voice/appcast.xml", "headers": [
+      { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+      { "key": "Content-Type", "value": "application/rss+xml; charset=utf-8" }
+    ] }
+  ]
+}
